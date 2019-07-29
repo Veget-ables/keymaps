@@ -1,10 +1,13 @@
 [
 	{ "keys": ["alt+left"], "command": "next_view_in_stack" },
 	{ "keys": ["alt+right"], "command": "prev_view_in_stack" },
-	{ "keys": ["alt+ctrl+t"], "command": "reopen_last_file" },
-	{ "keys": ["alt+t"], "command": "new_file" },
 	{ "keys": ["alt+w"], "command": "close_file" },
+	{ "keys": ["alt+ctrl+t"], "command": "reopen_last_file" },
+
+	{ "keys": ["ctrl+t"], "command": "new_file" },
+	{ "keys": ["super+t"], "command": "new_file" },
 	{ "keys": ["ctrl+a"], "command": "select_all" },
+	{ "keys": ["super+l"], "command": "expand_selection", "args": {"to": "line"} },
 	{ "keys": ["ctrl+w"], "command": "find_under_expand" },
 	{ "keys": ["ctrl+y"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
@@ -14,12 +17,20 @@
 	{ "keys": ["ctrl+v"], "command": "paste" },
 	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
 	{ "keys": ["ctrl+z"], "command": "undo" },
+	{ "keys": ["ctrl+e"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 	{ "keys": ["ctrl+shift+z"], "command": "redo" },
 	{ "keys": ["ctrl+shift+v"], "command": "paste_from_history" },
 	{ "keys": ["alt+j"], "command": "find_under_expand" },
 	{ "keys": ["ctrl+alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
-
-
+	{ "keys": ["alt+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["ctrl+alt+s"], "command": "prompt_add_folder"},
+	{ "keys": ["alt+s"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+	{ "keys": ["alt+t"], "command": "open_terminal_project_folder" },
+	{ "keys": ["ctrl+b"], "command": "goto_definition" },
+	{ "keys": ["ctrl+alt+left"], "command": "jump_back" },
+	{ "keys": ["ctrl+alt+right"], "command": "jump_forward" },
+    { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}},
 	{
 		"keys": ["ctrl+alt+shift+s"],
 		"command": "set_layout",
@@ -57,7 +68,7 @@
 	{ "keys": ["ctrl+alt+shift+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
 	{ "keys": ["ctrl+alt+shift+right"], "command": "focus_neighboring_group" },
 	
-	{ "keys": ["ctrl+alt+shift+="], "command": "increase_font_size" },
-	{ "keys": ["ctrl+alt+shift+-"], "command": "decrease_font_size" },
+	{ "keys": ["ctrl+alt+shift+k"], "command": "increase_font_size" },
+	{ "keys": ["ctrl+alt+shift+j"], "command": "decrease_font_size" },
 
 ]
